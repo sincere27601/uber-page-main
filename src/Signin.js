@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Signin.css';
- 
+import PetsIcon from '@material-ui/icons/Pets';
  
 
 
@@ -11,24 +11,24 @@ function Signin() {
 
         <div className="signinform">
         <div className="title">
-        <h1>Pet Manager Demo</h1>
+        <h1>Pet Manager Demo <PetsIcon /> </h1>
         <br />
         </div>
         <div className="formboxgray">
-        <h3>Sign In:</h3>
-         <input type="username" value="username" size="30"></input>
-         <br />
-         <input type="password" value="password" size="30"></input>
-         <br />
-         <br />
-         
-         <form name="form1" id="form1" action="/action_page.php">
-         <select name="chapter" id="chapter" >
-         <option value="" selected="selected">Select Domain</option>
-         </select>
-         <br />
+        <form>
+        <h3>Sign in:</h3>
+        <input type ="text" name="Username" placeholder="Username"></input>
+        <input type="text" name="Password" placeholder="Password"></input>
+        <select id ="select domain" value="Select Domain">
+        <option value ="dog">Select Domain</option>
+        <option value ="size">Select Size</option>
+        <option value ="vacinated">Select Vacinated</option>
+        </select>
+        <button class="btn"><a href="Viewpage.js"></a>Submit</button>
         
-       </form>
+        </form>
+        
+       
          </div>
        </div>
       
