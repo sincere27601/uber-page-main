@@ -1,11 +1,10 @@
 import React from 'react';
-import './Header.css';
-import {link} from 'react-router-dom';
+import "./About.css";
 
-function Header() {
+function About() {
     return (
     
-        <div className="header">
+        <div className="aboutinfo">
         
         <ul>
         <li><h2>UBER Pets</h2></li>
@@ -21,4 +20,4 @@ function Header() {
 }
 
 
-export default Header;
+export default About;

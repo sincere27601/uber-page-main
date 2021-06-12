@@ -4,25 +4,27 @@ import Header from "./Header";
 import Signin from './Signin';
 import './Signin.css';
 import Footer from "./Footer";
-import Viewpage from "./Viewpage";
 import {Route, Link} from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+
 
 function App() {
   return (
     <div className="app">
-     <Route exact path="/" component={Signin} />
-     <Route exact path="/Viewpage" component={Viewpage} />
+     <Route exact path="/" component={Home} />
+     <Route exact path="/About" component={About} />
+     <Route exact path="/Contact" component={Contact} />
      
+     <Header />
 
-    {/*Nav Bar*/}
-      <Header />
-
-        <Signin />
-        
-          {/*Domain*/}
-            {/*Footer*/}
-            <Footer />
-            <Viewpage />
+     <Signin />
+       
+         {/*Domain*/}
+           {/*Footer*/}
+           <Footer />
+           
 
            
     </div>
